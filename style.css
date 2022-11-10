@@ -180,6 +180,7 @@ font-weight: 500;
 /* styling for ministers */
 #ministers {
   margin: 15em 5em;
+  
 }
 #ministers h3 {
   margin: 2em 0;
@@ -193,16 +194,47 @@ font-weight: 500;
     color: black;
     
 }
-/* image wraooer */
+/* image wrapper */
 .minister{
     width: 100%;
     display: flex;
 overflow: hidden;
+border: 20px solid goldenrod;
+border-radius: 20px;
+
 }
+
 
 .minister img {
  width: 100%;
   height: 20em;
   justify-content: space-evenly;
+  animation: slide 25s infinite;
 }
 
+@keyframes slide {
+    0%{
+        transform: translate(0);
+    }    
+    25%{
+        transform: translate(0);
+    }    
+    30%{
+        transform: translate(-100%);
+    }    
+    50%{
+        transform: translate(-1000%);
+    }    
+    55%{
+        transform: translate(-200%);
+    }    
+    75%{
+        transform: translate(-200%);
+    }    
+    80%{
+        transform: translate(-300%);
+    }    
+    100%{
+        transform: translate(-300%);
+    }    
+}
