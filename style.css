@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Island+Moments&family=Kalam:wght@300;400;700&family=Marck+Script&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+    scroll-padding-top: 10em;
+  font-family: "Poppins", "Inter", sans-serif;
+  color: rgb(49, 45, 45);
+}
+
+/* styling for the header */
+
+nav {
+  position: fixed;
+  width: 100vw;
+  padding: 1em;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+}
+#logo {
+  color: black;
+  width: max-content;
+  padding: .1em .35em;
+  font-size: 2em;
+  text-align: left;
+  margin-left: 2em;
+  border: 2px solid gold;
+  border-radius: 30%;
+}
+
+.nav-options {
+  width: 40%;
+  margin: 0 2em 0 20em;
+  justify-content: right;
+}
+.nav-options ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-options ul li {
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 0.5em;
+}
+
+.nav-options ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  text-align: center;
+  color: black;
+  border-bottom: 1px solid;
+  
+}
+.nav-options ul li a:hover {
+    color: black;
+  border-bottom: 3px solid brown;
+  transition: 0.3s;
+}
+
+.nav-options ul li a.active{
+  /* border-bottom: 7px solid brown; */
+  outline: 3px solid purple;
+}
+
+#register button {
+  margin-top: 0.75em;
+  border: none;
+}
+#register button a {
+  padding: 1em 1.5em;
+  background-color: rgb(37, 30, 30);
+  border-radius: 0.75em;
+  border: none;
+  text-decoration: none;
+  color: goldenrod;
+  font-size: 1.2em;
+}
+#register button a:hover {
+  background-color: rgb(106, 26, 26);
+  color: azure;
+}
+/* styling for the body */
+#hero {
+  height: 80vh;
+  display: flex;
+  margin-left: 7em;
+}
+.hero-text {
+  width: 50%;
+  margin: 12em auto;
+  padding: 5em;
+}
+.hero-text h1 {
+  font-size: 5em;
+  line-height: 1em;
+  font-weight: 300;
+  color: goldenrod;
+}
+.hero-text h3 {
+  font-family: "Kalam", cursive;
+}
+.hero-text p {
+  margin-top: 3em;
+}
+.hero-img {
+  width: 50%;
+}
+
+.hero-img img {
+  color: azure;
+  margin-top: -5em;
+  margin-left: -17em;
+  border-radius: 0 0 75em 125em;
+  transform: scale(0.6);
+
+}
+.hero-img figcaption{
+    margin-top: -12em;
+    margin-left: 14em;
+    background-color: goldenrod;
+    width: max-content;
+    border-radius: 5px;
+    padding: .5em;
+font-weight: 500;
+}
+
+
+/* .hero-text a{
+    position: relative;
+  margin-top: 2em;
+  padding: 1em;
+
+} */
+
+.hero-text a {
+  margin-top: 2em;
+  text-decoration: none;
+  background-color: rgb(37, 30, 30);
+  color: goldenrod;
+  padding: 1em 1.5em;
+  border-radius: 0.5em;
+}
+.hero-text a:hover {
+  background-color: rgb(106, 26, 26);
+  color: azure;
+}
+
+/* about section */
+#about{
+    width: 50%;
+    margin: 10em auto;
+    
+}
+#about h3{
+
+    width: max-content;
+    rotate: -90deg;
+    margin-top: 15em;
+    margin-left: -8em;
+    margin-bottom: 1px solid goldenrod;
+}
+#about h3::before{
+    content: " ";
+    padding: .75em 1em;
+    margin-right: .5em;
+    background-color: goldenrod;
+    color: black;
+    
+}
+#about p{
+    margin-top: -3.5em;
+}
+/* styling for ministers */
+#ministers {
+  margin: 15em 5em;
+}
+#ministers h3 {
+  margin: 2em 0;
+}
+
+#ministers h3::before{
+    content: " ";
+    padding: .75em 1em;
+    margin-right: .5em;
+    background-color: goldenrod;
+    color: black;
+    
+}
+/* image wraooer */
+.minister{
+    width: 100%;
+    display: flex;
+overflow: hidden;
+}
+
+.minister img {
+ width: 100%;
+  height: 20em;
+  justify-content: space-evenly;
+}
+
